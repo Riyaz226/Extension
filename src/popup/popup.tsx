@@ -18,7 +18,7 @@ const App = () => {
 
   const addValue = () => {
     if (keyInput) {
-      alert('Key already entered. Cannot edit.');
+      alert('Key is entered. Cannot edit.');
       return;
     }
 
@@ -29,7 +29,7 @@ const App = () => {
         const storedDataString = localStorage.getItem('keyValues');
         const storedData = storedDataString ? JSON.parse(storedDataString) : {};
 
-        storedData[value] = true; // You can set any default value here
+        storedData[value] = true;
         localStorage.setItem('keyValues', JSON.stringify(storedData));
 
         alert('Value added successfully');

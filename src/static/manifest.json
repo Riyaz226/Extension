@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "react-boilerplate",
+  "name": "react-extension",
   "description": "React boilerplate for Chrome extension",
   "version": "1.0.0",
   "action": {
